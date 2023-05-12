@@ -38,7 +38,7 @@ body {
 
 .section1, .section2, .section3, .section4, .section6 {
     width: 100%;
-    min-height: 100svh;
+    min-height: 100%;
     position: relative;
     transform-style: preserve-3d;
 }
@@ -85,7 +85,7 @@ body {
     left: 50%;
     font-family: 'franklin gothic heavy';
     transform: translateX(-50%) translateY(-50%);
-    font-size: 3.5em;
+    font-size: 3.5rem;
     color: rgb(0, 0, 0);
     text-shadow: 3px 4px #f23333;
 }
@@ -99,7 +99,7 @@ body {
     left: 50%;
     font-family: 'franklin gothic heavy';
     transform: translateX(-50%) translateY(-50%);
-    font-size: 5em;
+    font-size: 5rem;
     color: rgb(255, 255, 255);
     text-shadow: 3px 4px #f23333;
 
@@ -107,7 +107,7 @@ body {
 
 p {
     position: absolute;
-    font-size: 1em;
+    font-size: 1rem;
     color: rgb(255, 255, 255);
     font-weight: 300;
     text-align: justify;
@@ -131,14 +131,14 @@ p {
     left: 50%;
     font-family: 'franklin gothic heavy';
     transform: translateX(-50%) translateY(-50%);
-    font-size: 5em;
+    font-size: 5rem;
     color: rgb(0, 0, 0);
     text-shadow: 3px 4px #f23333;
 }
 
 .section3 p {
     position: absolute;
-    font-size: 1em;
+    font-size: 1rem;
     color: rgb(0, 0, 0);
     font-weight: 300;
     text-align: justify;
@@ -163,7 +163,7 @@ p {
     left: 50%;
     font-family: 'franklin gothic heavy';
     transform: translateX(-50%) translateY(-50%);
-    font-size: 5em;
+    font-size: 4rem;
     color: rgb(255, 255, 255);
     text-shadow: 3px 4px #f23333;
 }
@@ -203,7 +203,6 @@ h2 {
     font-size: 4rem;
     padding:1rem;
     font-family: 'franklin gothic heavy';
-    font-size: 5em;
     color: rgb(255, 255, 255);
     text-shadow: 3px 4px #f23333;
 }
@@ -226,7 +225,6 @@ h2 {
     font-size: 4rem;
     padding:1rem;
     font-family: 'franklin gothic heavy';
-    font-size: 5em;
     color: rgb(0, 0, 0);
     text-shadow: 3px 4px #f23333;
 }
@@ -245,10 +243,15 @@ h2 {
 }
 
 
-
 @keyframes clouds{
     100%{
         transform: translateX(900px);
+    }
+    50%{
+        transform: translateX(500px);
+    }
+    0%{
+        transform: translateX(100px);
     }
 }
 
@@ -262,4 +265,33 @@ h2 {
     100%{
         transform: translateY(-2px);
     }
+}
+
+@media (max-width:991px){
+    
+    html{
+        font-size: 55%;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:768px){
+    html{
+        font-size: 55%;
+    }
+
+
+}    
+    
+
+@media (max-width:450px){
+    
+    html{
+        font-size: 50%;
+    }
+
 }
