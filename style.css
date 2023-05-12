@@ -10,7 +10,7 @@
     -webkit-flex-basis: 100px
 }
 :root{
-    --black:#000000;
+    font-size: 16px;
 }
 
 * {
@@ -36,7 +36,14 @@ body {
     overflow-y: scroll;
 }
 
-.section1, .section2, .section3, .section4, .section6 {
+.section1, .section2, .section4, .section6 {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.section3 {
     width: 100%;
     min-height: 100%;
     position: relative;
@@ -45,7 +52,7 @@ body {
 
 .section5 {
     width: 100%;
-    min-height: 70%;
+    min-height: 100%;
     position: relative;
     transform-style: preserve-3d;
 }
@@ -83,9 +90,9 @@ body {
     text-align: center;
     top: 50%;
     left: 50%;
-    font-family: 'franklin gothic heavy';
+    font-family: '';
     transform: translateX(-50%) translateY(-50%);
-    font-size: 3.5rem;
+    font-size: 5rem;
     color: rgb(0, 0, 0);
     text-shadow: 3px 4px #f23333;
 }
@@ -97,7 +104,7 @@ body {
     text-align: center;
     top: 10%;
     left: 50%;
-    font-family: 'franklin gothic heavy';
+    font-family: 'Rowdies', cursive;
     transform: translateX(-50%) translateY(-50%);
     font-size: 5rem;
     color: rgb(255, 255, 255);
@@ -107,7 +114,7 @@ body {
 
 p {
     position: absolute;
-    font-size: 1rem;
+    font-size: 2rem;
     color: rgb(255, 255, 255);
     font-weight: 300;
     text-align: justify;
@@ -127,26 +134,13 @@ p {
     padding: 0;
     position: absolute;
     text-align: center;
-    top: 15%;
+    top: 10%;
     left: 50%;
-    font-family: 'franklin gothic heavy';
+    font-family: 'Rowdies', cursive;
     transform: translateX(-50%) translateY(-50%);
     font-size: 5rem;
     color: rgb(0, 0, 0);
     text-shadow: 3px 4px #f23333;
-}
-
-.section3 p {
-    position: absolute;
-    font-size: 1rem;
-    color: rgb(0, 0, 0);
-    font-weight: 300;
-    text-align: justify;
-    left: 20%;
-    right: 20%;
-    top: 30%;
-    font-family: 'Rowdies';
-
 }
 
 .section4 {
@@ -159,13 +153,26 @@ p {
     padding: 0;
     position: absolute;
     text-align: center;
-    top: 15%;
+    top: 10%;
     left: 50%;
-    font-family: 'franklin gothic heavy';
+    font-family: 'Rowdies', cursive;
     transform: translateX(-50%) translateY(-50%);
-    font-size: 4rem;
+    font-size: 5rem;
     color: rgb(255, 255, 255);
     text-shadow: 3px 4px #f23333;
+}
+
+.section4 p {
+    position: absolute;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    text-align: justify;
+    left: 20%;
+    right: 20%;
+    top: 20%;
+    font-family: 'Rowdies', cursive;
+
 }
 
 .container{
@@ -179,8 +186,8 @@ p {
     background-image: url(clouds.png);
     top: 170%;
     position: absolute;
-    width: 400vh;
-    height: 20vh;
+    width: 400svh;
+    height: 20svh;
     background-size: contain;
     background-repeat: repeat;
     animation: clouds 50s linear infinite;
@@ -198,21 +205,31 @@ p {
     
 }
 
-h2 {
+.section5 .text {
+    margin: 0;
+    padding: 0;
+    position: absolute;
     text-align: center;
-    font-size: 4rem;
-    padding:1rem;
-    font-family: 'franklin gothic heavy';
-    color: rgb(255, 255, 255);
+    top: 10%;
+    left: 50%;
+    font-family: 'Rowdies', cursive;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 5rem;
+    color: rgb(0, 0, 0);
     text-shadow: 3px 4px #f23333;
 }
 
-.section4 li {
-    padding: 1.5%;
-    font-size: 1rem;
-    list-style-position: inside;
-    flex-wrap: wrap;
-    color: #fff;
+.section5 p {
+    position: absolute;
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    text-align: justify;
+    left: 20%;
+    right: 20%;
+    top: 20%;
+    font-family: 'Rowdies', cursive;
+
 }
 
 .section5 {
@@ -220,28 +237,36 @@ h2 {
 
 }
 
-.section5 h2 {
-    text-align: center;
-    font-size: 4rem;
-    padding:1rem;
-    font-family: 'franklin gothic heavy';
-    color: rgb(0, 0, 0);
-    text-shadow: 3px 4px #f23333;
-}
-
-.section5 li {
-    padding: 1.5%;
-    font-size: 1rem;
-    list-style-position: inside;
-    flex-wrap: wrap;
-    color: #070707;
-}
-
 .section6 {
     background: rgb(0, 0, 0);
 
 }
 
+.section6 .text {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    left: 50%;
+    font-family: 'Rowdies', cursive;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 4px #f23333;
+}
+
+.section6 p {
+    position: absolute;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    text-align: justify;
+    left: 20%;
+    right: 20%;
+    top: 20%;
+    font-family: 'Rowdies';
+}
 
 @keyframes clouds{
     100%{
@@ -276,22 +301,57 @@ h2 {
     section{
         padding:2rem;
     }
+    p {
+        font-size: 2rem;
+    }
+    .section2 p{
+        display: block;
+        font-size: 1.4rem;
+    }
+    .section6 p {
+        font-size: 2rem;
+    }
+    .section4 p{
+        font-size: 1.2rem;
+    }
+    .section5 p {
+        font-size: 1.4rem;
+    }
+    .section1 .text{
+        font-size: 3rem;
+    }
+    .section2 .text, .section3 .text, .section4 .text, .section5 .text, .section6 .text{
+        font-size: 2rem;
+    }
 
 }
+  
 
-@media (max-width:768px){
+@media screen and (max-width:450px){
     html{
         font-size: 55%;
     }
-
-
-}    
-    
-
-@media (max-width:450px){
-    
-    html{
-        font-size: 50%;
+    p {
+        font-size: 1rem;
+    }
+    .section2 p{
+        display: block;
+        font-size: 0.7rem;
+    }
+    .section6 p {
+        font-size: 1rem;
+    }
+    .section4 p{
+        font-size: 0.6rem;
+    }
+    .section5 p {
+        font-size: 0.7rem;
+    }
+    .section1 .text{
+        font-size: 3rem;
+    }
+    .section2 .text, .section3 .text, .section4 .text, .section5 .text, .section6 .text{
+        font-size: 2rem;
     }
 
 }
