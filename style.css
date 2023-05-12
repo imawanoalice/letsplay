@@ -38,14 +38,14 @@ body {
 
 .section1, .section2, .section3, .section4, .section6 {
     width: 100%;
-    min-height: 100%;
+    min-height: 100svh;
     position: relative;
     transform-style: preserve-3d;
 }
 
 .section5 {
     width: 100%;
-    min-height: 100%;
+    min-height: 70%;
     position: relative;
     transform-style: preserve-3d;
 }
