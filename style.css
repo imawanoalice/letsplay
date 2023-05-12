@@ -327,31 +327,35 @@ p {
 }
   
 
-@media screen and (max-width:450px){
-    html{
-        font-size: 55%;
-    }
-    p {
-        font-size: 1rem;
-    }
-    .section2 p{
-        display: block;
-        font-size: 0.7rem;
-    }
-    .section6 p {
-        font-size: 1rem;
-    }
-    .section4 p{
-        font-size: 0.6rem;
-    }
-    .section5 p {
-        font-size: 0.7rem;
-    }
-    .section1 .text{
-        font-size: 3rem;
-    }
-    .section2 .text, .section3 .text, .section4 .text, .section5 .text, .section6 .text{
-        font-size: 2rem;
-    }
-
-}
+@media screen and (max-width: 450px) { 
+    html { 
+      font-size: 55%; 
+      overflow: hidden; 
+    } 
+    .section2 p { 
+      font-size: 0.7rem; 
+    } 
+    .section6 p { 
+      font-size: 0.7rem; 
+    } 
+    .section4 p { 
+      font-size: 0.6rem; 
+    } 
+    .section5 p { 
+      font-size: 0.7rem; 
+    } 
+    .section1 .text { 
+      font-size: 3rem; 
+    } 
+    .section2 .text, 
+    .section3 .text, 
+    .section4 .text, 
+    .section5 .text, 
+    .section6 .text { 
+      font-size: 2rem; 
+    } 
+   
+    .section4 { 
+      margin-bottom: 20px; 
+    } 
+  }
